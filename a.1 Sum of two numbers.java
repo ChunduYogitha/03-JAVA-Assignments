@@ -11,3 +11,16 @@ public class Main{
 }
 INPUT : 20 30
 OUTPUT : 50
+
+
+
+import java.io.*;
+public class Main{
+    public static void main(String[] args){
+        int a = 10;
+        int b = 20;
+        System.out.println(a+b);
+    }
+}
+
+OUTPUT : 30
