@@ -1,32 +1,28 @@
-import java.io.*;
-public class Main{
-    public static void main(String[] args){
-        int n = 2002;
-        if(n%4==0){
-            System.out.println("Leap Year");
-        }
-        else{
-            System.out.println("Not Leap Year");
-        }
-    }
-}
-  OUTPUT : Not Leap Year
-
-
-import java.io.*;
-import java.util.*;
-public class Main{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        if(n%4==0){
-            System.out.println("Leap Year");
-        }
-        else{
-            System.out.println("Not Leap Year");
+Input a year and find whether it is a leap year or not
+    import java.io.*;
+    public class Main{
+        public static void main(String[] args){
+            int Year = 1900;
+            boolean isLeapYear = false;
+            if(Year % 4 ==0){
+                if(Year % 100 == 0){
+                    if(Year % 400 == 0){
+                        isLeapYear = true;
+                    }
+                }
+                else{
+                    isLeapYear = false;
+                }
+            }
+            if(isLeapYear){
+                System.out.println("leap year");
+            }
+            else{
+                System.out.println("not a leap year");
+            }
         }
     }
-}
 
-INPUT : 2016
-OUTPUT : Leap Year
+/* 
+    OUTPUT : not a leap year
+*/
