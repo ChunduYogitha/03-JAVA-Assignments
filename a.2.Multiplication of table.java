@@ -2,7 +2,7 @@ import java.io.*;
 class Main{
     public static void main(String[] args){
         int n = 2;
-        for(int i=0;i<=10;i++){
+        for(int i=0;i<10;i++){
             System.out.println(n +" * " +(i+1) +" = " +(n*(i+1)));
         }
         
@@ -21,7 +21,7 @@ OUTPUT
 2 * 8 = 16
 2 * 9 = 18
 2 * 10 = 20
-2 * 11 = 22
+
 
 
 import java.io.*;
@@ -30,7 +30,7 @@ class Main{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        for(int i=0;i<=10;i++){
+        for(int i=0;i<10;i++){
             System.out.println(n +" * " +(i+1) +" = " +(n*(i+1)));
         }
         
@@ -49,4 +49,4 @@ OUTPUT :5 * 1 = 5
         5 * 8 = 40
         5 * 9 = 45
         5 * 10 = 50
-        5 * 11 = 55
+        
