@@ -35,7 +35,6 @@ public class Main{
         return SI;
     }
 }
-/*
 Principal amout = 500
 Time = 10
 Rate = 5
