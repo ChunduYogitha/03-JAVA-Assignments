@@ -1,5 +1,6 @@
 1) Sum of even numbers in a digit
 2) Count number of even numbers in a digit
+3)Sum of even numbers in a digit
 
 
 
@@ -76,12 +77,27 @@ output:
 
 
 --------------------------------------------------------------------------------------------------------------------------
+3)Sum of even numbers in a digit
+
+import java.io.*;
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        int n = 245678;
+        String str = Integer.toString(n); // str = "245678"
+        int sum = 0;
+        for(int i=0; i<str.length(); i++){
+            int b = Integer.parseInt(String.valueOf(str.charAt(i)));
+            if(b%2==0){
+                sum = sum+b;
+            }
+        }
+        System.out.println(sum);
+    }
+}
 
 
-
-
-
-
+output : 20
 
 
 
