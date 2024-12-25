@@ -1,7 +1,8 @@
 1) Sum of even numbers in a digit
 2) Count number of even numbers in a digit
-3)Sum of even numbers in a digit
-
+3) Sum of even numbers in a digit
+4) Sum of even place values
+5) Sum of even place values using while loop
 
 
 
@@ -100,5 +101,48 @@ public class Main{
 output : 20
 
 
-
+--------------------------------------------------------------------------------------------------------------------------
+4)Sum of even place values using string
     
+import java.io.*;
+public class Main{
+    public static void main(String[] args){
+        int n = 245678;
+        String str = Integer.toString(n);
+        int sum=0;
+        for(int i=0;i<str.length();i++){
+            if(i%2!=0){
+                int b = Integer.parseInt(String.valueOf(str.charAt(i)));
+                sum = sum+b;
+            }
+        }
+        System.out.println(sum);
+    }
+}
+
+output : 18
+
+--------------------------------------------------------------------------------------------------------------------------
+5) Sum of even place values using while loop
+
+import java.io.*;
+public class Main{
+    public static void main(String[] args){
+        int n = 245678;
+        int i=0;
+        int sum =0;
+        while(n>0){
+           int rem = n%10;
+           i++;
+           if(i%2!=0){
+               sum = sum+rem;
+           }
+           n=n/10;
+        }
+        System.out.println(sum);
+    }
+}
+
+output : 18
+
+--------------------------------------------------------------------------------------------------------------------------
